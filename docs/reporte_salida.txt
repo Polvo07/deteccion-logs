@@ -1,0 +1,50 @@
+======================================================================
+REPORTE DE IPs SOSPECHOSAS  (11 detectadas)
+======================================================================
+Ordenadas por gravedad: revisar de arriba hacia abajo.
+
+#1  218.49.238.116     gravedad 6  ⚠ herramienta de ataque
+     tipo(s): inyeccion_sql
+     3 peticiones con patrones SQL
+
+#2  70.221.77.139      gravedad 6  ⚠ herramienta de ataque
+     tipo(s): inyeccion_sql
+     1 peticiones con patrones SQL
+
+#3  111.44.236.74      gravedad 4  ⚠ herramienta de ataque
+     tipo(s): escaneo
+     18 rutas inexistentes distintas
+
+#4  85.93.136.66       gravedad 4  ⚠ herramienta de ataque
+     tipo(s): escaneo
+     16 rutas inexistentes distintas
+
+#5  119.137.213.249    gravedad 4  ⚠ herramienta de ataque
+     tipo(s): escaneo
+     17 rutas inexistentes distintas
+
+#6  239.229.18.60      gravedad 3
+     tipo(s): fuerza_bruta
+     76 intentos de login fallidos
+
+#7  203.184.182.49     gravedad 3
+     tipo(s): fuerza_bruta
+     38 intentos de login fallidos
+
+#8  219.189.118.93     gravedad 3
+     tipo(s): fuerza_bruta
+     54 intentos de login fallidos
+
+#9  6.1.54.172         gravedad 1
+     tipo(s): volumen
+     180 peticiones (15x la mediana de 12)
+
+#10  12.34.180.83       gravedad 1
+     tipo(s): volumen
+     512 peticiones (43x la mediana de 12)
+
+#11  239.72.33.166      gravedad 1
+     tipo(s): volumen
+     508 peticiones (42x la mediana de 12)
+
+[guardado] /home/andre/deteccion-logs/docs/reporte_ips.csv
