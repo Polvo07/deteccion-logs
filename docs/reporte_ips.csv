@@ -1,0 +1,12 @@
+prioridad,ip,gravedad,tipos_detectados,usa_herramienta_ataque,peticiones_totales,evidencia
+1,218.49.238.116,6,inyeccion_sql,True,12,3 peticiones con patrones SQL
+2,70.221.77.139,6,inyeccion_sql,True,12,1 peticiones con patrones SQL
+3,111.44.236.74,4,escaneo,True,20,18 rutas inexistentes distintas
+4,85.93.136.66,4,escaneo,True,20,16 rutas inexistentes distintas
+5,119.137.213.249,4,escaneo,True,18,17 rutas inexistentes distintas
+6,239.229.18.60,3,fuerza_bruta,False,79,76 intentos de login fallidos
+7,203.184.182.49,3,fuerza_bruta,False,40,38 intentos de login fallidos
+8,219.189.118.93,3,fuerza_bruta,False,57,54 intentos de login fallidos
+9,6.1.54.172,1,volumen,False,180,180 peticiones (15x la mediana de 12)
+10,12.34.180.83,1,volumen,False,512,512 peticiones (43x la mediana de 12)
+11,239.72.33.166,1,volumen,False,508,508 peticiones (42x la mediana de 12)
