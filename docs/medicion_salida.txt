@@ -1,0 +1,30 @@
+================================================================
+MEDICIÓN DEL DETECTOR
+================================================================
+Peticiones analizadas : 18,491
+IPs totales           : 1,430
+Atacantes reales      : 12
+IPs detectadas        : 11
+
+--- Resultado global ---
+Detectados correctamente (VP) : 10
+Se escaparon (FN)             : 2
+Falsas alarmas (FP)           : 1
+
+Precisión : 90.9%  (de lo que acusamos, cuánto era real)
+Cobertura : 83.3%  (de los atacantes, cuántos atrapamos)
+F1        : 87.0%  (equilibrio entre las dos)
+
+--- Cobertura por tipo de ataque ---
+Tipo               Reales   Detectados   Cobertura
+--------------------------------------------------
+escaneo                 3            3       100%
+escaneo_lento           1            0         0%
+fuerza_bruta            3            3       100%
+fuerza_bruta_lenta        1            0         0%
+inyeccion_sql           2            2       100%
+volumen                 2            2       100%
+
+[atención] se escaparon estas IPs atacantes: ['119.140.53.224', '20.116.170.140']
+
+[atención] falsas alarmas (IPs inocentes acusadas): ['6.1.54.172']

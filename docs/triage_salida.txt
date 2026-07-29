@@ -1,0 +1,63 @@
+======================================================================
+TRIAGE DE datos/acceso.log
+18491 líneas en total
+======================================================================
+
+### Las 10 IPs con más peticiones
+(un volumen muy por encima del resto es sospechoso)
+
+    512 12.34.180.83
+    508 239.72.33.166
+    180 6.1.54.172
+     79 239.229.18.60
+     57 219.189.118.93
+     40 203.184.182.49
+     22 78.234.4.232
+     22 77.113.195.103
+     22 220.150.146.95
+     22 181.64.179.15
+
+### Posible fuerza bruta: IPs con más respuestas 401 (login fallido)
+
+     76 239.229.18.60
+     54 219.189.118.93
+     38 203.184.182.49
+     15 20.116.170.140
+
+### Posible escaneo: IPs con más respuestas 404 (ruta inexistente)
+
+     18 111.44.236.74
+     17 119.137.213.249
+     16 85.93.136.66
+     10 6.1.54.172
+      6 197.86.102.101
+
+### Accesos a rutas sensibles (paneles, configuración, respaldos)
+
+     15 /admin
+      7 /backup
+      4 /console
+      3 /wp-admin
+      3 /shell
+      3 /phpmyadmin
+      3 /manager
+      3 /config.php
+      3 /actuator
+      3 /.git
+
+### Posible inyección SQL: peticiones con patrones de SQL
+
+     12 70.221.77.139
+     12 218.49.238.116
+
+### User-agents de herramientas de ataque conocidas
+
+     32 Nmap
+     16 Nikto
+     14 sqlmap
+      9 acunetix
+
+======================================================================
+Fin del triage. Para el análisis completo y medido:
+    python3 src/detectar.py
+======================================================================
